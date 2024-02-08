@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Liste des recettes {% endblock %}
+
+{% block body %}
+    <h1>Liste des éléments</h1>
+    {% for recette in recettes %}
+        <div style="background-color: white">
+            <ul>         
+                <li>{{ recette.nom }}</li>
+                <li>{{ recette.ingredients }}</li>
+                <li>{{ recette.ustencils }}</li>
+                <li>{{ recette.instructions }}</li>
+                <li>{{ recette.image }}</li>
+                <li>{{ recette.tempsCuisson }}</li>
+                <li><p>Nutriscore : {{ nutriscore }} </p></li>     
+            </ul>
+        </div>
+    {% endfor %}
+    <br>
+
+{% endblock %}

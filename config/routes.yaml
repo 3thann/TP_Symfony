@@ -3,3 +3,19 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+default_route:
+    path: /
+    controller: App\Controller\HomeController::index
+
+home:
+    path: /home
+    controller: App\Controller\HomeController::index
+
+index:
+    path: /index
+    controller: App\Controller\IndexController::index
+
+recette:
+    path: /recette
+    controller: App\Controller\RecetteController::index
